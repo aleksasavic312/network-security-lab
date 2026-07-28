@@ -1,4 +1,4 @@
-# Enterprise Network with Cisco ASA, IPsec VPN & AAA Security
+# Network security with Cisco ASA, IPsec VPN & AAA Security
 
 A secure enterprise network designed and simulated in **Cisco Packet Tracer**,
 spanning the access, distribution and perimeter layers. The project brings
