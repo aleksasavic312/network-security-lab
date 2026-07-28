@@ -70,9 +70,8 @@ implemented, grouped by area.
 ## Access control lists
 
 - **Standard named ACL (`SSH_MIKAN`)** - permits SSH to Router B only from
-  odd-numbered hosts in the lower usable range of Router B's LAN, and only on
-  Fridays 08:00–18:00 via a time range; the last usable host of that range is
-  denied at all times, and everything else is denied.
+  odd-numbered hosts in the lower usable range of Router B's LAN, the last usable host of that range is
+  denied and everything else is denied.
 - **Extended named ACL (`MIKAN`)** - blocks SSH to Router A and ICMP to the
   CONFERENCE-ROOM and EMPLOYEE LANs from spoofed/bogon sources (RFC 1918
   class A/B/C, multicast and 127.0.0.0/8), while whitelisting host PC6
