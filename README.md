@@ -46,8 +46,7 @@ IPsec VPN, an ASA edge firewall and centralized AAA authentication.
 
 ### 6. Access Control Lists
 * **Standard named (`SSH_MIKAN`):** permits SSH to Router B only from
-  odd-numbered hosts of the LAN's lower range, and only Fridays 08:00–18:00 via
-  a time range; the last usable host is denied at all times.
+  odd-numbered hosts of the LAN's lower range, the last usable host is denied at all times.
 * **Extended named (`MIKAN`):** anti-spoofing filter blocking SSH to Router A
   and ICMP to the CONFERENCE-ROOM and EMPLOYEE LANs from bogon sources
   (RFC 1918 A/B/C, multicast, 127.0.0.0/8), with host PC6 whitelisted; inbound
