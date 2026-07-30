@@ -112,7 +112,7 @@ IPsec VPN, an ASA edge firewall and centralized AAA authentication.
 1. **Prerequisites:** Cisco Packet Tracer 8.2 or newer.
 2. **Clone the repository:**
    ```
-   git clone https://github.com/aleksasavic312/enterprise-network-security-lab.git
+   git clone https://github.com/aleksasavic312/network-security-lab.git
    ```
 3. **Open the simulation:** launch `packet-tracer/lab.pkt`.
 4. **Or just read the configs:** every device's running-config is in `configs/`
