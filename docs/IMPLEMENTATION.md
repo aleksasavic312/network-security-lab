@@ -73,7 +73,7 @@ implemented, grouped by area.
   odd-numbered hosts in the lower usable range of Router B's LAN, the last usable host of that range is
   denied and everything else is denied.
 - **Extended named ACL (`MIKAN`)** - blocks SSH to Router A and ICMP to the
-  CONFERENCE-ROOM and EMPLOYEE LANs from spoofed/bogon sources (RFC 1918
+  KONFERENCIJSKA_SALA and ZAPOSLENI LANs from spoofed/bogon sources (RFC 1918
   class A/B/C, multicast and 127.0.0.0/8), while whitelisting host PC6
   (public 209.165.64.226) for SSH to Router A and ping to the TACACS+ server.
   Inbound EIGRP updates toward those two LANs are dropped; all other legitimate
@@ -81,7 +81,7 @@ implemented, grouped by area.
 
 ## Site-to-Site IPsec VPN (Router B)
 
-Protects traffic between LAN B and the EMPLOYEE LAN, scoped by a crypto ACL so
+Protects traffic between LAN B and the ZAPOSLENI LAN, scoped by a crypto ACL so
 only that traffic is encrypted.
 
 - **IKE Phase 1 (ISAKMP):** AES-256 encryption, SHA-1 hashing, pre-shared-key
@@ -113,8 +113,8 @@ only that traffic is encrypted.
 
 ## Zone-Based Firewall (Router A)
 
-- Defined three security zones: **EMPLOYEE** (PC2 + TACACS+ server),
-  **CONFERENCE-ROOM** (PC1) and **INTERNET** and assigned each interface to
+- Defined three security zones: **ZAPOSLENI** (PC2 + TACACS+ server),
+  **KONFERENCIJSKA_SALA** (PC1) and **INTERNET** and assigned each interface to
   its corresponding zone.
 
 ---
