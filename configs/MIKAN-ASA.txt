@@ -1,6 +1,7 @@
 !
 hostname MIKAN-ASA
 domain-name sshbezbednost.com
+enable password hDvfddRo4myjpj6G encrypted
 names
 !
 interface GigabitEthernet1/1
@@ -72,7 +73,6 @@ access-group DMZ_TO_INSIDE in interface dmz
 aaa authentication telnet console LOCAL
 aaa authentication ssh console LOCAL
 !
-username admin password XK9CbN4MkQEI0jdt encrypted
 username mixiadmin password Zxbtdc3XRtuPfSfX encrypted
 !
 class-map inspection_default
@@ -90,7 +90,7 @@ policy-map global_policy
 service-policy global_policy global
 !
 telnet 172.16.192.0 255.255.248.0 inside
-telnet timeout 5
+telnet timeout 10
 ssh 172.16.192.0 255.255.248.0 inside
 ssh 209.165.64.226 255.255.255.255 outside
 ssh timeout 15
