@@ -157,8 +157,6 @@ show tacacs
 
 ```
 show zone security
-show zone-pair security
-show policy-map type inspect zone-pair
 ```
 * `zone security` - three zones (EMPLOYEE, CONFERENCE-ROOM, INTERNET) with the
   right member interfaces.
