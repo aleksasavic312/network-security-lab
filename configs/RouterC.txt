@@ -1,5 +1,3 @@
-! RouterC running-config
-
 !
 version 15.1
 no service timestamps log datetime msec
