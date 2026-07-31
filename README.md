@@ -143,9 +143,8 @@ in **[docs/verification_guide.md](docs/verification_guide.md)**. Quick checks:
 | S1 — SSH admin | `adminmikana` | `mikana12345` | privilege 15, MD5, domain `mixi.com` |
 | Router B / local fallback | `mikan2` | `mikan2pa55` | used if TACACS+ is unreachable |
 | Router B / TACACS+ shared key | — | `mikica123` | router ↔ TACACS+ server |
-| Site-to-Site VPN — pre-shared key | — | `vpnpa55` | ISAKMP Phase 1 |
-| ASA — local admin | `mixiadmin` | `mixi123` | AAA local; SSH domain `sshbezbednost.com` |
-
-To enter privileged EXEC mode on the MIKAN-ASA device, simply press Enter when prompted for a password, as the default password is blank.
+| Site-to-Site VPN - pre-shared key | — | `vpnpa55` | ISAKMP Phase 1 |
+| ASA - local admin | `mixiadmin` | `mixi123` | AAA local; SSH domain `sshbezbednost.com` |
+| ASA - privileged EXEC mode | / | ciscoasa | / |
 
 ---
