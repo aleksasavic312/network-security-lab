@@ -82,16 +82,14 @@ show ip dhcp snooping binding
 
 ```
 show access-lists
-show time-range
 ```
 * `access-lists` shows `SSH_MIKAN` and `MIKAN` with incrementing hit counts as
   traffic matches.
 * `ip interface` confirms each ACL is applied in the correct direction.
-* `time-range` shows the Friday 08:00–18:00 window for `SSH_MIKAN`.
 * **Positive/negative tests for `SSH_MIKAN`:** SSH to Router B from an
   odd-numbered host during the window succeeds; from an even host, outside the
   window, or from the last usable host - denied.
-* **Tests for `MIKAN`:** a bogon-sourced ping to the CONFERENCE-ROOM/EMPLOYEE
+* **Tests for `MIKAN`:** a bogon-sourced ping to the KONFERENCIJSKA_SALA/ZAPOSLENI
   LANs is dropped, while **PC6 (209.165.64.226)** can still SSH to Router A and
   ping the TACACS+ server.
 
@@ -102,7 +100,7 @@ show crypto isakmp sa
 show crypto ipsec sa
 show crypto map
 ```
-* First send interesting traffic (ping from LAN B to the EMPLOYEE LAN), then:
+* First send interesting traffic (ping from LAN B to the ZAPOSLENI LAN), then:
 * `isakmp sa` shows state **QM_IDLE** (Phase 1 up).
 * `ipsec sa` shows **pkts encaps / decaps** counters incrementing (Phase 2 is
   encrypting real traffic).
@@ -157,7 +155,7 @@ show tacacs
 ```
 show zone security
 ```
-* `zone security` - three zones (EMPLOYEE, CONFERENCE-ROOM, INTERNET) with the
+* `zone security` - three zones (ZAPOSLENI, KONFERENCIJSKA_SALA, INTERNET) with the
   right member interfaces.
 * `zone-pair` / `policy-map` - inspection policies applied between zones; the
   counters confirm traffic is being matched and inspected.
