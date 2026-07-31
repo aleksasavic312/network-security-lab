@@ -82,7 +82,6 @@ show ip dhcp snooping binding
 
 ```
 show access-lists
-show ip interface <interface>
 show time-range
 ```
 * `access-lists` shows `SSH_MIKAN` and `MIKAN` with incrementing hit counts as
