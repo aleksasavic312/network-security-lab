@@ -92,8 +92,7 @@ only that traffic is encrypted.
 ## Perimeter firewall, Cisco ASA (`MIKAN-ASA`)
 
 - Configured three logical interfaces with security levels: **inside (100)**,
-  **outside (0)** and **DMZ (70)**, and mapped the physical ports to the right
-  VLANs. Blocked traffic initiated from the DMZ toward the inside.
+  **outside (0)** and **DMZ (70)**. Blocked traffic initiated from the DMZ toward the inside.
 - Added a static default route so the internal network can reach the Internet.
 - **PAT** for the inside network via an `inside-net` object; **static NAT** for
   the DMZ web server via a `web-net` object mapped to an outside address.
