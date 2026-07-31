@@ -97,11 +97,11 @@ IPsec VPN, an ASA edge firewall and centralized AAA authentication.
 ├── docs/
 │   ├── IMPLEMENTATION.md      # detailed, area-by-area write-up
 │   ├── topology.png         # network diagram
-│   ├── VERIFICATION.md      # verify if everything is working
+│   ├── verification_guide.md      # verify if everything is working
 ├── configs/                  # exported running-config per device (.txt)
 │   ├── RouterA.txt   RouterB.txt  RouterC.txt
 │   ├── Central.txt   S1.txt … S8.txt
-│   ├── MIKAN-ASA.txt
+│   └── MIKAN-ASA.txt
 └── packet-tracer/
     └── lab.pkt           # full Packet Tracer simulation
 ```
