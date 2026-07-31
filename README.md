@@ -48,13 +48,13 @@ IPsec VPN, an ASA edge firewall and centralized AAA authentication.
 * **Standard named (`SSH_MIKAN`):** permits SSH to Router B only from
   odd-numbered hosts of the LAN's lower range, the last usable host is denied at all times.
 * **Extended named (`MIKAN`):** anti-spoofing filter blocking SSH to Router A
-  and ICMP to the CONFERENCE-ROOM and EMPLOYEE LANs from bogon sources
+  and ICMP to the KONFERENCIJSKA_SALA and ZAPOSLENI LANs from bogon sources
   (RFC 1918 A/B/C, multicast, 127.0.0.0/8), with host PC6 whitelisted; inbound
   EIGRP updates to those LANs are dropped.
 
 ### 7. Site-to-Site IPsec VPN
 * Encrypted tunnel on **Router B** protecting traffic between LAN B and the
-  EMPLOYEE LAN, scoped by a crypto ACL.
+  ZAPOSLENI LAN, scoped by a crypto ACL.
 * **IKE Phase 1:** AES-256, SHA-1, pre-shared key, DH group 5, 36000 s lifetime.
 * **IKE Phase 2:** transform set `VPN-SET` (`esp-aes` + `esp-sha-hmac`) bound via
   crypto map `VPN-MAP`.
@@ -76,8 +76,8 @@ IPsec VPN, an ASA edge firewall and centralized AAA authentication.
   unreachable.
 
 ### 10. Zone-Based Firewall on Router A
-* Three security zones: **EMPLOYEE** (PC2 + TACACS+ server),
-  **CONFERENCE-ROOM** (PC1) and **INTERNET** with interfaces assigned
+* Three security zones: **ZAPOSLENI** (PC2 + TACACS+ server),
+  **KONFERENCIJSKA_SALA** (PC1) and **INTERNET** with interfaces assigned
   accordingly.
 
 ### 11. Device Hardening & Secure Management
