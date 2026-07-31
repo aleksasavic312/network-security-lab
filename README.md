@@ -1,6 +1,6 @@
 # Network security with Cisco ASA, IPsec VPN & AAA Security
 
-A secure network designed and simulated in **Cisco Packet Tracer**,
+A secure network simulated in **Cisco Packet Tracer**,
 spanning the access, distribution and perimeter layers. The project brings
 together dynamic routing, Layer 2 hardening, access control, a site-to-site
 IPsec VPN, an ASA edge firewall and centralized AAA authentication.
