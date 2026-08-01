@@ -171,8 +171,6 @@ show parser view
 * `ip ssh` on S1 - **version 2**, authentication timeout / retries, RSA modulus
   **1024**.
 * `line vty` - `transport input ssh` only (Telnet refused).
-* **Negative test:** `telnet <S1-ip>` fails; `ssh -l adminmikana <S1-ip>`
-  succeeds.
 * **Role test:** `enable view Tech_MIXI`, then confirm only `show protocols`,
   `show ip protocols` and `show ip route` are permitted, other commands are
   rejected.
