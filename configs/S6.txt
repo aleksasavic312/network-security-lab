@@ -36,6 +36,7 @@ interface FastEthernet0/8
 interface FastEthernet0/9
 !
 interface FastEthernet0/10
+ switchport mode access
  switchport port-security maximum 3
  switchport port-security mac-address sticky 
  spanning-tree portfast
